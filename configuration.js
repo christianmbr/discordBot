@@ -12,5 +12,8 @@ export default {
     password: process.env.MONGO_PASSWORD,
     cluster: process.env.MONGO_CLUSTER,
     database: process.env.MONGO_DATABASE
+  },
+  rapidApi: {
+    key: process.env.RAPID_KEY
   }
 }

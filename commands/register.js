@@ -15,16 +15,44 @@ const commands = [
   {
     name: 'aprendechiste',
     description: 'Mani, por si quieres guardar un chistecito melo.',
-    options: [{
-      name: 'chiste',
-      description: 'Mani, escribe aqui tu chistecito!',
-      type: 3,
-      require: true
-    }]
+    options: [
+      {
+        name: 'chiste',
+        description: 'Mani, escribe aqui tu chistecito!',
+        type: 3,
+        require: true
+      }
+    ]
   },
   {
     name: 'cuentamischistes',
     description: 'Mani, esto cuenta un chiste que alguien guardo!'
+  },
+  // To translate.
+  {
+    name: 'traduceme',
+    description: 'Mani, yo soy espectacular en los idiomas.',
+    options: [
+      {
+        name: 'traducir',
+        description: 'Mani, ponme el texto que quieras que tin si o que. Pruedo traducir french, spanish y english.',
+        type: 3,
+        require: true
+      },
+      {
+        name: 'del',
+        description: 'A que idioma esta el texto mani? Soy bobo entonces me tienes que escribir french, spanish o english.',
+        type: 3,
+        require: true
+      },
+      {
+        name: 'a',
+        description: 'A que idioma quiere que lo tin mi rey? Pon french, spanish o englis',
+        type: 3,
+        require: true
+      }
+
+    ]
   }
 ]
 
