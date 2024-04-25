@@ -28,6 +28,7 @@ const commands = [
     name: 'cuentamischistes',
     description: 'Mani, esto cuenta un chiste que alguien guardo!'
   },
+
   // To translate.
   {
     name: 'traduceme',
@@ -51,7 +52,30 @@ const commands = [
         type: 3,
         require: true
       }
+    ]
+  },
 
+  // Historical events!
+  {
+    name: 'eventoshoy',
+    description: 'Mani, pa que sepa que paso hoy!'
+  },
+  {
+    name: 'eventos',
+    description: 'Selecciona una fecha mani, y te cuento que paso! Dia y fecha',
+    options: [
+      {
+        name: 'dia',
+        description: 'Pon el dia en numero entero!',
+        type: 3,
+        require: true
+      },
+      {
+        name: 'mes',
+        description: 'Pon el mes en numero entero!',
+        type: 3,
+        require: true
+      }
     ]
   }
 ]

@@ -1,6 +1,7 @@
 /* eslint-disable no-case-declarations */
 import { sayJoke, saveJoke } from './jokeController.js'
 import { translateText } from './translateController.js'
+import { getEvents } from './historicalEvents.js'
 
 export const index = async (interaction) => {
   if (!interaction.isChatInputCommand()) return null
@@ -18,6 +19,15 @@ export const index = async (interaction) => {
         interaction.options.getString('del'),
         interaction.options.getString('a')
       ))
+      break
+    case 'eventoshoy':
+      interaction.reply(await getEvents())
+      break
+    case 'eventos':
+      interaction.reply(await getEvents({
+        month: interaction.options.getString('mes'),
+        day: interaction.options.getString('dia')
+      }))
       break
     default:
       throw console.error('That commandName does not exist!')
